@@ -2,4 +2,4 @@
 session_start();
 $name = $_POST["name"];
 $_SESSION["name"] = $name;
-include 'index11.php';
+include 'index.php';
