@@ -1,3 +1,3 @@
 <?php
-$_SESSION = [];
-include 'index.php';
+$_SESSION = ["name"];
+header("Location: index.php");
