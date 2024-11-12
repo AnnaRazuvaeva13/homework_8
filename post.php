@@ -1,5 +1,7 @@
 <?php
 session_start();
-$name = $_POST["name"];
-$_SESSION["name"] = $name;
-include 'index.php';
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['name'])) {
+  $name = $_POST["name"];
+  $_SESSION["name"] = $name;
+}
+header("Location: index.php");
