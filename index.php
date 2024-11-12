@@ -2,7 +2,7 @@
 if (empty($_SESSION["name"])) {
   include 'form.html'; 
 }
-if (!empty($_SESSION["name"])) {
+else {
   echo "Добро пожаловать, " . $_SESSION["name"] . "! <br>";
   echo "<a href='exit.php'> Очистить переменную сессии </a>";
 }
